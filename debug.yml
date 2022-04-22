@@ -3,7 +3,8 @@
   hosts: all
   tasks:
   - name: play for debug
-    debug: "visit tht google.com"
+    debug: 
+    msg: "visit tht google.com"
 ...
    
 
