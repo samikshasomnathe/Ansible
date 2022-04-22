@@ -2,7 +2,7 @@
 - name: My First Playbook
   hosts: all
   tasks:
-  - name: ping the hosts
+  - name: print the name
     debug: "visit tht google.com"
 ...
    
