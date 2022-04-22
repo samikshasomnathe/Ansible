@@ -1,6 +1,6 @@
 ---
  - name: My First Playbook
-   hosts: 172.31.4.30
+   hosts: all
    tasks:
     - name: ping the hosts
       ping:
