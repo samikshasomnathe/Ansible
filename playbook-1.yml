@@ -1,9 +1,9 @@
 ---
- - name: My First Playbook
-   hosts: all
-   tasks:
-    - name: ping the hosts
-      ping:
+- name: My First Playbook
+  hosts: all
+  tasks:
+  - name: ping the hosts
+    ping:
 ...
    
 
