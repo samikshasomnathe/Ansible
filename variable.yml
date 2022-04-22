@@ -7,4 +7,10 @@
     - name: print hello world
       debug:
         msg: "Please visit {{ URL }}"
+    - name: print cloudblitz
+      debug:
+        msg: "Please visit {{ URL }}"
+      vars:
+        URL: "local.cloudblitz.in"
+
 ...
