@@ -1,0 +1,9 @@
+---
+ - name: first playbook for module ping
+  hosts: all
+  tasks:
+    - name: ping the hosts
+      ping:
+...
+   
+S
