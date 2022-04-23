@@ -1,7 +1,7 @@
 ---
  - name: playbook for variable
    hosts: all
-   vars:
+   vars:            #global variable
      URL: "www.cloudblitz.in"
    tasks:
     - name: print hello world
@@ -10,7 +10,7 @@
     - name: print cloudblitz
       debug:
         msg: "Please visit {{ URL }}"
-      vars:
+      vars:             #local variable
         URL: "local.cloudblitz.in"
 
 ...
