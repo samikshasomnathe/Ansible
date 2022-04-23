@@ -1,6 +1,9 @@
 ---
  - name: playbook for variable
    hosts: all
+   vars_files:
+    - ./filevar.yml
+
    vars_prompt:            #prompt variable
     - name: URL
       prompt: "Please enter your website"
