@@ -1,15 +1,15 @@
 ---
  - name: playbook for variable
    hosts: all
-   vars_prompt:
+   vars_prompt:            #prompt variable
     - name: URL
       prompt: "Please enter your website"
-      private: false
+      private: true
 
 
    vars:            #global variable
      URL: "www.cloudblitz.in"
-   tasks:
+   tasks: 
     - name: print hello world
       debug:
         msg: "Please visit {{ URL }}"
