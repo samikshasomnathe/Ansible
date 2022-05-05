@@ -1,0 +1,11 @@
+- name: Loop in Ansible 
+  hosts: all
+  tasks:
+    - name: loop
+      debug:
+        msg: 'My fav colour {{ item }}'
+      loop:
+        - white
+        - black
+        - red
+        - pink
