@@ -15,5 +15,5 @@
     
     - name: Deploy Website
       copy:
-        src: ./index.html
+        contain: "welcome"
         dest: /var/www/html/index.html
