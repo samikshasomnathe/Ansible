@@ -4,8 +4,8 @@
     - name: print OS if it is centos
       debug:
         msg: "This is {{ ansible_distribution }}"
-      when: (ansible_distribution == 'Ubuntu' && ansible_distribution_major_version >= '6')
-      ignore_errors: yes
+      when: (ansible_distribution == 'Ubuntu' && ansible_distribution_major_version <= '6')
+      
 
     - name: ptint Os if it is centos
       debug:
