@@ -9,5 +9,5 @@
 
     - name: ptint Os if it is centos
       debug:
-        msg: "centos version is {{ansible_distribution}}"
+        msg: "centos version is {{ ansible_distribution }}"
       when: (ansible_distribution == 'Centos' and ansible_distribution_major_version == '7' )
