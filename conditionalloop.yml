@@ -4,7 +4,7 @@
     - name: print OS if it is centos
       debug:
         msg: "This is {{ ansible_distribution }}"
-      when: (ansible_distribution == 'Ubuntu')
+      when: (ansible_distribution == 'Ubuntu' or ansible_distribution > '6')
       
 
     - name: ptint Os if it is centos
