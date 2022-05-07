@@ -17,3 +17,8 @@
       copy:
         src: ./index.html
         dest: /var/www/html/index.html
+    
+    - name: Deploy Website
+      copy:
+        src: ./jon/index.html
+        dest: /var/www/html/
