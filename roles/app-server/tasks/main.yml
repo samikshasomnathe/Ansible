@@ -19,7 +19,7 @@
 
 - name: Deploy webapp
   copy:
-    src: ./student.war
+    src: roles\app-server\file\student.war
     dest: /opt/{{TOMCAT_DIR}}/webapps/student.war
 
 - name: Upload configuration file
