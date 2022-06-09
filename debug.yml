@@ -4,7 +4,7 @@
   tasks:
   - name: play for debug
     debug: 
-       msg: "visit tht google.com"
+       msg: "visit to google.com"
 ...
    
 
